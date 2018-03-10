@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function getvalues(){
+var fname=document.form2.firstname.value;
+var lname=document.form2.lastname.value;
+alert(fname);
+document.getElementById('message').innerHTML="Firstname:" +  fname + "Lastname:" + lname;
+
+}
+</script>
+</head>
+<body>
+
+<form action="#" name="form2">
+
+  <p style="color:black;">First name:<br></p>
+  <input type="text" name="firstname" >
+  <br><br>
+  <p style="color:black;">Last name:<br></p>
+  <input type="text" name="lastname" >
+  <br><br>
+  <p style="color:black;">address:<br></p>
+  <textarea name="message" rows="7" cols="20"></textarea>
+  <br><br>
+  <p style="color:black;">gender:<br></p>
+  <input type= "radio" name="male" >male
+  <input type="radio" name="female">female
+  <br><br>
+<body style="background-color:cyan">
+  <p style="color:black;"> course:</p>
+<select name="course" multiple>
+    <option value="CSE">CSE</option>
+    <option value="IT">IT</option>
+    <option value="ECE">ECE</option>
+    <option value="MECH">MECH</option>
+  </select>
+  <br><br>
+  <p style="color:black;">subject:</p>
+<select name="course" >
+    <option value="AI">AI</option>
+    <option value="SOFTWARE">SOFTWARE</option>
+    <option value="DATA ANALYTICS">DATA ANALYTICS</option>
+    <option value="DPSD">DPSD</option>
+  </select>
+  <br><br>
+<body style="background-color:cyan">
+  <p style="color:black;">country:</p>
+<input type="checkbox" name="country1" value="india">india
+<br>
+<input type="checkbox" name="country2" value="others">others
+<br><br>
+ <input type="submit" value="Submit" onclick="getvalues();return false;">
+</form> 
+<p> click the "Submit" button</p>
+<p id="message"></p>
+</body>
+</html>
