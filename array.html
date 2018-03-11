@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1> Chocolate Shop</h1>
+<p>add Chocolate</p>
+
+<button onclick="myFunction()">additem</button>
+
+<p id="demo"></p>
+
+<script>
+var candy = ["milkybar", "kitkat", "5star"];
+document.getElementById("demo").innerHTML = candy;
+
+function myFunction() {
+    candy.push("twix", "galaxy", "dairymilk");
+    document.getElementById("demo").innerHTML = candy;
+}
+</script>
+
+<p>remove item</p>
+
+<button onclick="myFunction()">remove</button>
+
+<p id="demo"></p>
+
+<script>
+var candy = ["milkybar", "kitkat", "5star"];
+document.getElementById("demo").innerHTML = candy;
+
+function myFunction() {
+    candy.pop("twix", "galaxy", "dairymilk");
+    document.getElementById("demo").innerHTML = candy;
+}
+</script>
+
+
+</body>
+</html>
